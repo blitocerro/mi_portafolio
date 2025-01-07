@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Titulo de la web -->
-    <title>Pablo Yarzon Web</title>
+    <title>Portafolio: Pablo Yarzon</title>
     <!-- Importacion de css -->
     <link rel="stylesheet" href="style.css">
 
@@ -29,7 +29,6 @@
 <body>
 
     <!-- HEADER -->
-
     <header>
 
         <!-- LOGO -->
@@ -46,7 +45,7 @@
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Sobre mi</a></li>
             <li><a href="#">Portafolio</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#contact-form">Contacto</a></li>
         </ul>
 
     </header>
@@ -68,14 +67,32 @@
     </section>
 
     <div class="icons">
-        <a href="#"><i class="ri-instagram-line"></i></a>
-        <a href="#"><i class="ri-twitter-x-fill"></i></a>
-        <a href="#"></a>
+        <a href="https://www.instagram.com/yarzonpablo/" target="_blank"><i class="ri-instagram-line"></i></a>
+        <a href="https://x.com/pablo_yarz77289" target="_blank"><i class="ri-twitter-x-fill"></i></a>
     </div>
 
     <div class="scroll-down">
-        <a href="#"><i class="ri-arrow-down-box-line"></i></i></a>
+        <a href="#contact-form"><i class="ri-arrow-down-box-line"></i></i></a>
     </div>
+
+    <footer>
+       
+        <div class="datos">
+        <h3>Informacion de contacto</h3>
+        <i class='bx bx-map'>Montevideo, Uruguay</i>
+        <i class='bx bx-phone-call'>+598 91 400 872</i>
+        <i class='bx bx-envelope'>pabloyarzon2004@gmail.com</i>
+    
+        </div>
+
+        <form action="" id="contact-form" class="contact-form">
+            <h3>Contactame !!</h3>
+            <input type="text"  name="name" id="name" placeholder="Nombre">
+            <input type="text"  name="email" id="email" placeholder="Correo electronico">
+            <textarea name="Mensaje" id="Mensaje" placeholder="Mensaje"></textarea>
+            <input type="submit" class="btn-form" value="Mandar correo">
+        </form>
+    </footer>
 </body>
 
 </html>
