@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- ICONOS -->
+    <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
 
     <!-- https://boxicons.com/ -->
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -24,6 +25,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sixtyfour&display=swap"
         rel="stylesheet">
+
+
 </head>
 
 <body>
@@ -43,8 +46,8 @@
 
         <ul class="navlist">
             <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre mi</a></li>
-            <li><a href="#">Portafolio</a></li>
+            <li><a href="#about-me">Sobre mi</a></li>
+            <li><a href="">Portafolio</a></li>
             <li><a href="#contact-form">Contacto</a></li>
         </ul>
 
@@ -55,10 +58,11 @@
         <div class="hero-text">
             <h5>Estudiante</h5>
             <h4>Informatica</h4>
-            <h1>Pablo Yarzon</h1>
+            <h1>PAGINA EN DESARROLLO</h1>
             <p>Desarrollador web en crecimiento </p>
-            <a href="#">Ver CV</a>
-            <a  href="https://github.com/blitocerro/repositorio" target="_blank" class="git"> <i class='bx bxl-github'></i> Perfil GitHub</a>
+            <a href="assets/pdf/Pablo-Yarzon.pdf" target="_blank">Ver CV</a>
+            <a href="https://github.com/blitocerro/repositorio" target="_blank" class="git"> <i
+                    class='bx bxl-github'></i> Perfil GitHub</a>
         </div>
 
         <div class="hero-img">
@@ -72,27 +76,72 @@
     </div>
 
     <div class="scroll-down">
-        <a href="#contact-form"><i class="ri-arrow-down-box-line"></i></i></a>
+        <a href="#about-me"><i class="ri-arrow-down-box-line"></i></i></a>
     </div>
 
+    <section id="about-me" class="about-me">
+        <h2>Sobre mi</h2>
+        <p class="parrafo">Hola a todos !! Me llamo Pablo Yarzon tengo 20 años y soy estudiante de informatica, actualmente proyectado a
+            el aprendizaje de lenguas avanzadas para el manejo de diseño web, si estas viendo esto es por que estas
+            interesado en ver alguno de mis proyectos, por aca te voy a dejar un link hacia el portafolio con todos mis
+            proyectos, <a href="">esto es un link a portafolio</a> y por si estas interesado en saber algo mas de mi
+            aqui te dejo un link con un poco mas de informatcion <a href="">esto es un link a parte acerca de</a></p>
+        <div class="skills">
+            <h3>Skills</h3>
+            <div class="skill html">
+                <i class='ri-html5-fill'></i>
+                <p >HTML</p>
+            </div>
+            <div class="skill css">
+                <i class='ri-css3-fill'></i>
+                <p>CSS</p>
+            </div>
+            <div class="skill java">
+                <i class='ri-javascript-fill'></i>
+                <p>JavaScript</p>
+            </div>
+            <div class="skill excel">
+                <i class="ri-file-excel-2-fill"></i>
+                <p>Excel</p>
+            </div>
+        </div>
+    </section>
+
+
     <footer>
-        
+
         <div class="datos">
-        <h3>Informacion de contacto</h3>
-        <i class='bx bx-map'>Montevideo, Uruguay</i>
-        <i class='bx bx-phone-call'>+598 91 400 872</i>
-        <i class='bx bx-envelope'>pabloyarzon2004@gmail.com</i>
-    
+            <h3>Informacion de contacto</h3>
+            <div class="dato">
+                <i class='bx bx-map'></i>
+                <p>Montevideo, Uruguay</p>
+            </div>
+            <div class="dato">
+                <i class='bx bx-phone-call'></i>
+                <p>+598 91 400 872</p>
+            </div>
+            <div class="dato">
+                <i class='bx bx-envelope'></i>
+                <p>pabloyarzon2004@gmail.com</p>
+            </div>
         </div>
 
-        <form action="" id="contact-form" class="contact-form">
-            <h3>Contactame !!</h3>
-            <input type="text"  name="name" id="name" placeholder="Nombre">
-            <input type="text"  name="email" id="email" placeholder="Correo electronico">
-            <textarea name="Mensaje" id="Mensaje" placeholder="Mensaje"></textarea>
-            <input type="submit" class="btn-form" value="Mandar correo">
+
+        <form action="" method="post" id="contact-form" class="contact-form">
+            <h3>¡Contáctame!</h3>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+            <textarea name="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
+            <button class="btn-form" id="enviar" type="submit" value="Mandar correo">Mandar correo</button>
+            <p class="respuesta" id="respuesta"></p>
         </form>
+
     </footer>
+
+    <script src="backphp/jquery-3.7.1.min.js"></script>
+
+    <script src="backphp/validacion.js"></script>
+
 </body>
 
 </html>
