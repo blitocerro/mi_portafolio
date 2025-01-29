@@ -1,8 +1,3 @@
-/* h1{
-    font-family: "Roboto Condensed", serif;
-} */
- 
-
 /* NORMALIZACION */
 *{
     margin: 0;
@@ -123,7 +118,7 @@ section {
     width: 400px;
     margin: 10% 0 0 10% ;
     border-radius: 30px;
-    border: #21383d 2px solid; 
+    border: #21383d 4px solid; 
     height: auto;
     transition: all 3s linear;
 }
@@ -225,6 +220,37 @@ section {
     transform: scale(1.1); /* Escala la sección sin afectar el contenido */
 }
 
+.about-me a {
+    display: inline-block;
+    background-color: #4d4d4d;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.about-me  a:hover{
+    background-color: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+} 
+
+.about-me  a.git{
+    background-color: transparent;
+    border: 1px solid grey;
+
+}
+
+.about-me  a.git i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
 .parrafo {
     text-align: center;
     margin: 0 30px;
@@ -255,20 +281,40 @@ section {
     display: flex;
     justify-content: center;
 }
+.skills h3{    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 10px;
 
-.html:hover{
-    background-color: #e34f26;
 }
-.css:hover{
-    background-color: #264de4;
+.html>i:hover{
+    color: #e34f26;
 }
-.java:hover{
-    background-color: #f89820;
+.css>i:hover{
+   color: #264de4;
 }
-.excel:hover{
-    background-color: #217346;
+.java>i:hover{
+   color: #f89820;
 }
-/* FALTA AÑADIR HOVER CON LOS COLORES DE CADA COSA */
+.excel>i:hover{
+   color: #217346;
+}
+.html>p:hover{
+    color: #e34f26;
+}
+.css>p:hover{
+   color: #264de4;
+}
+.java>p:hover{
+   color: #f89820;
+}
+.excel>p:hover{
+   color: #217346;
+}
+
 /* FOOTER */
 footer {
     z-index: 10; 
@@ -283,12 +329,12 @@ footer {
     border-radius: 10px;
     position: relative;
     width: 350px;
-    display: flex; /* Cambiamos de grid a flex */
-    flex-direction: column; /* Apilar elementos verticalmente */
-    align-items: center; /* Centrar los hijos horizontalmente */
-    gap: 1rem; /* Espacio entre los elementos */
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 1rem;
     transition: all .5s linear;
-    margin: 0 auto; /* Centra el contenedor dentro de su contenedor padre */
+    margin: 0 auto; 
 }
 
 .contact-form:hover {
@@ -374,18 +420,35 @@ footer {
 }
 
 
-.correcto{
-    border-color: 2px solid green;
-    background-color: green;
-    font-size: 14px;
+/* ABOUT-ME-HTML */
+
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:1520px) {
+
+    .contact-form{
+        transition:none;
+        transform: none;
+
+    }
+    .contact-form:hover{
+        width: 350px;
+    }
+
+    .hero-text {
+        padding-top: 0;
+        maring: 0;
+    }
 }
 
-.incorrecto{
-    border-color: 2px solid red;
-    background-color: red;
-    font-size: 14px;
+@media (max-width:1218) {
+     .hero me {
+        
+     }
 }
-/* MEDIA QUERIES */
 
 @media (max-width:992px){
     section{
@@ -424,6 +487,10 @@ footer {
     }
 }
 
+.sobremi{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 54px;
+}
 @media (max-width: 768px){
     
     .menu-icon-action{

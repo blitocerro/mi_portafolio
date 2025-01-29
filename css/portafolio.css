@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", serif;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    background: linear-gradient(245.59deg, #31494e 0%, #385e70 25%, #131313 75%);
+}
+
+
+/* HEADER Y NAV */
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10; 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 3%;
+    background-color: linear-gradient(245.59deg, #1f2b2e 0%, #2e6985 25%, #242222 75%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.navlist{
+    display: flex;
+
+}
+
+.navlist a {
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5 ease 0s;
+}
+
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+
+/* CLICKEABLE EL MENU PARA CELULAR */
+#menu-icon{
+    display: none;
+}
+
+#menu-icon{
+    font-size: 35;
+    z-index: 100;
+    cursor: pointer;
+}
+
+#menu-toggle{
+    display: none;
+}
+
+.menu-icon-action{
+    display: none;
+}
+section {
+    padding-top: 80px;
+    
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.proyecto-card {
+    background-color: rgba(37, 44, 36, 0.699);
+    border-radius: 10px;
+    box-shadow: 4px 4px 8px rgba(62, 204, 62, 0.781);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.proyecto-card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.proyecto-card i:hover {
+    color: #6bb874;
+}
+
+.proyecto-card p {
+    font-size: 20px;
+    color: #6bb874;
+    margin: 5px 0;
+}
+
+.no-data {
+    text-align: center;
+    font-style: italic;
+    color: #777;
+    grid-column: span 4; 
+}
+
+
+/* FOOTER */
+footer {
+    height: auto;
+    z-index: 10; 
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-form {
+    background: #131313;
+    border-radius: 10px;
+    position: relative;
+    width: 350px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    gap: 1rem;
+    transition: all .5s linear;
+    margin: 0 auto; 
+}
+
+.contact-form:hover {
+    width: 370px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 80%;
+    padding: 10px;
+    background: #131313;
+    border: 1px solid #4d4d4d;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all .5s ease;
+}
+
+.contact-form textarea{
+    margin: 20px 0;
+    resize: none;
+    height: 100px;
+}
+
+.contact-form h3{
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.btn-form{
+    display: inline-block;
+    background-color: #4d4d4d;
+    border: 1px solid transparent;
+    padding: 15px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.btn-form:hover{
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+.datos{
+    display: grid;
+    padding: 20px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    align-items: center;
+    transition: all .5s linear;
+}
+
+.datos h3 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dato{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.dato p {
+    margin-left: 10px;
+}
+
+.dato p:hover {
+    color: #4d4d4d;
+}

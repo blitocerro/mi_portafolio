@@ -18,13 +18,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ";
 
     try {
-        // Enviar correo al administrador
-        $mail->addAddress('pabloyarzon2004@gmail.com'); // Cambia a tu correo real
+        $mail->addAddress('pabloyarzon2004@gmail.com'); 
         $mail->send();
         echo json_encode(['status' => 'success', 'message' => 'Correo enviado correctamente al administrador']);
     } catch (Exception $e) {
         echo json_encode(['status' => 'error', 'message' => 'No se pudo enviar el correo al administrador', 'error' => $e->getMessage()]);
-    }
+    } 
 
     // Crear el correo de confirmación para el remitente
     $mail->clearAddresses(); // Limpiar la dirección del administrador
@@ -43,5 +42,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } catch (Exception $e) {
         echo json_encode(['status' => 'error', 'message' => 'No se pudo enviar el correo de confirmación', 'error' => $e->getMessage()]);
     }
+
 }
 ?>
